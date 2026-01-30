@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "789854235451",
+    "firebase_url": "https://jsbpad-default-rtdb.firebaseio.com",
+    "project_id": "jsbpad",
+    "storage_bucket": "jsbpad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789854235451:android:978d5c9b3608be5208651e",
+        "android_client_info": {
+          "package_name": "br.senac.qualquer_coisa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789854235451-jtoqg1mm16qi5948ht5e83l5pm6i13pc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.senac.qualquer_coisa",
+            "certificate_hash": "05deb388a98080e36aa96846c1e8c212343f97a2"
+          }
+        },
+        {
+          "client_id": "789854235451-i1on8q8dot57ss7760jaki7nkrvgvvo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeqeVBCNrXdsqzByG9XDou9rEb6fdv-pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789854235451-i1on8q8dot57ss7760jaki7nkrvgvvo9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789854235451:android:58b0817b0996372408651e",
+        "android_client_info": {
+          "package_name": "net.luferat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789854235451-lkqdgodoe8597bi74e9do8i1p898qfqd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.luferat",
+            "certificate_hash": "35dfcc4747c5a563e737fcea9b07ff94b54392a9"
+          }
+        },
+        {
+          "client_id": "789854235451-i1on8q8dot57ss7760jaki7nkrvgvvo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeqeVBCNrXdsqzByG9XDou9rEb6fdv-pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789854235451-i1on8q8dot57ss7760jaki7nkrvgvvo9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789854235451:android:c9c4f699d14b8d7808651e",
+        "android_client_info": {
+          "package_name": "net.luferat.oncredit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789854235451-i1on8q8dot57ss7760jaki7nkrvgvvo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeqeVBCNrXdsqzByG9XDou9rEb6fdv-pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789854235451-i1on8q8dot57ss7760jaki7nkrvgvvo9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
