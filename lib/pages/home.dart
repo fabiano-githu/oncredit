@@ -17,11 +17,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   late final String _status;
   final FinanceService _financeService = FinanceService();
+  final ClientService _clientService = ClientService();
 
   final TextEditingController _searchController = TextEditingController();
   String _search = '';
-
-  get _clientService => null;
 
   @override
   void initState() {
