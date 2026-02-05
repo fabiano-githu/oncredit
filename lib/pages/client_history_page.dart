@@ -23,7 +23,7 @@ class ClientHistoryPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Center(
-              child: const Text(
+              child: Text(
                 'Histórico de Relacionamento',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
