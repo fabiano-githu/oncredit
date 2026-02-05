@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/client.dart';
-import '../services/finance_service.01.dart';
+import '../services/finance_service.dart';
 import '../templates/appbar.dart';
 
 class ClientPage extends StatelessWidget {
