@@ -23,7 +23,7 @@ class ClientHistoryPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Center(
-              child: const Text(
+              child: Text(
                 'Histórico de Relacionamento',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
@@ -37,7 +37,7 @@ class ClientHistoryPage extends StatelessWidget {
               style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
-            Text('CPF: ${client.cpf}'),
+            Text('CPF: ${client.formattedCpf}'),
             const SizedBox(height: 16),
             const Divider(),
 
