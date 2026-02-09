@@ -7,6 +7,7 @@ import '../templates/appbar.dart';
 import '../config/app_config.dart';
 import '../tools/formatters.dart';
 import '../services/finance_service.dart';
+import 'client_edit_page.dart';
 import 'client_page.dart';
 import 'new_client_page.dart';
 
@@ -26,6 +27,12 @@ class _HomePageState extends State<HomePage> {
 
   final TextEditingController _searchController = TextEditingController();
   String _search = '';
+
+  void _reloadClients() {
+    setState(() {
+      _clientsFuture = _clientService.getClients();
+    });
+  }
 
   @override
   void initState() {
@@ -126,13 +133,23 @@ class _HomePageState extends State<HomePage> {
                       contentPadding: const EdgeInsets.only(left: 40.0),
                       title: Text(client.name),
                       subtitle: Text('CPF: ${client.formattedCpf}'),
-                      onTap: () {
-                        Navigator.push(
+                      onTap: () async {
+                        final result = await Navigator.push<ClientEditResult>(
                           context,
                           MaterialPageRoute(
                             builder: (_) => ClientPage(client: client),
                           ),
                         );
+
+                        if (result == ClientEditResult.deleted) {
+                          _reloadClients();
+
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              content: Text('Cliente apagado com sucesso'),
+                            ),
+                          );
+                        }
                       },
                     );
                   },

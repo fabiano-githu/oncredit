@@ -56,7 +56,10 @@ class ClientForm extends StatelessWidget {
           TextFormField(
             controller: cpfController,
             enabled: cpfEnabled,
-            decoration: const InputDecoration(labelText: 'CPF'),
+            decoration: InputDecoration(
+              labelText: 'CPF',
+              helperText: cpfEnabled ? null : 'CPF não pode ser alterado',
+            ),
             keyboardType: TextInputType.number,
             inputFormatters: [_cpfMask],
             validator: (v) {
