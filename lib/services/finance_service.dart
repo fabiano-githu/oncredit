@@ -3,6 +3,8 @@
 import 'package:dio/dio.dart';
 import '../config/app_config.dart';
 import '../models/financial_event.dart';
+import '../models/payment.dart';
+import '../models/purchase.dart';
 
 class FinanceService {
   final Dio _dio = Dio();
@@ -108,6 +110,7 @@ class FinanceService {
             value: (p['value'] as num).toDouble(),
             date: DateTime.parse(p['date']),
             type: FinancialEventType.payment,
+            method: p['method'],
           ),
         );
       }
@@ -137,5 +140,23 @@ class FinanceService {
 
     await deleteByClient('purchases');
     await deleteByClient('payments');
+  }
+
+  Future<void> registerPurchase(Purchase purchase) async {
+    final uid = AppConfig.fixedUid;
+
+    await _dio.post(
+      '${AppConfig.baseUrl}/users/$uid/purchases.json',
+      data: purchase.toMap(),
+    );
+  }
+
+  Future<void> registerPayment(Payment payment) async {
+    final uid = AppConfig.fixedUid;
+
+    await _dio.post(
+      '${AppConfig.baseUrl}/users/$uid/payments.json',
+      data: payment.toMap(),
+    );
   }
 }

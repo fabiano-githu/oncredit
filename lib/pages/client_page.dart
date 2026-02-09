@@ -11,6 +11,9 @@ import 'client_history_page.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'new_payment_page.dart';
+import 'new_purchase_page.dart';
+
 String onlyNumbers(String value) {
   return value.replaceAll(RegExp(r'[^0-9]'), '');
 }
@@ -57,12 +60,35 @@ class _ClientPageState extends State<ClientPage> {
             ListTile(
               leading: const Icon(Icons.shopping_cart),
               title: const Text('Registrar compra'),
-              onTap: () {},
+              onTap: () async {
+                final result = await Navigator.push<bool>(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => NewPurchasePage(clientId: client.id),
+                  ),
+                );
+
+                if (result == true) {
+                  setState(() {}); // recarrega resumo financeiro
+                }
+              },
             ),
+
             ListTile(
               leading: const Icon(Icons.payments),
               title: const Text('Registrar pagamento'),
-              onTap: () {},
+              onTap: () async {
+                final result = await Navigator.push<bool>(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => NewPaymentPage(clientId: client.id),
+                  ),
+                );
+
+                if (result == true) {
+                  setState(() {}); // atualiza resumo financeiro
+                }
+              },
             ),
 
             const SizedBox(height: 16),
