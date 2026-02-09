@@ -112,7 +112,7 @@ class ClientForm extends StatelessWidget {
             Expanded(
               child: TextFormField(
                 controller: phoneControllers[index],
-                decoration: const InputDecoration(labelText: 'Telefone'),
+                decoration: const InputDecoration(labelText: 'Telefone com DDD'),
                 keyboardType: TextInputType.number,
                 inputFormatters: [_phoneMask],
               ),
