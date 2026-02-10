@@ -97,16 +97,11 @@ class _NewPaymentPageState extends State<NewPaymentPage> {
                       labelText: 'Forma de pagamento',
                     ),
                     items: const [
-                      DropdownMenuItem(
-                        value: 'Dinheiro',
-                        child: Text('Dinheiro'),
-                      ),
-                      DropdownMenuItem(value: 'PIX', child: Text('PIX')),
-                      DropdownMenuItem(value: 'Cartão', child: Text('Cartão')),
-                      DropdownMenuItem(
-                        value: 'Transferência',
-                        child: Text('Transferência'),
-                      ),
+                      DropdownMenuItem(value: 'Dinheiro', child: Text('Dinheiro'),),
+                      DropdownMenuItem(value: 'PIX', child: Text('PIX'),),
+                      DropdownMenuItem(value: 'Débito', child: Text('Débito'),),
+                      DropdownMenuItem(value: 'Crédito', child: Text('Crédito'),),
+                      DropdownMenuItem(value: 'Transferência', child: Text('Transferência'),),
                     ],
                     onChanged: (v) => setState(() => _method = v!),
                   ),
