@@ -16,7 +16,7 @@ Um APK (Android) para testes está disponível em:
 
 O tutorial de criação do aplicativo está disponível em:
 
-| [`https://lufer.clic/flutter/oncredit`](https://lufer.clic/flutter/oncredit) |
+| [`https://lufer.click/flutter/oncredit`](https://lufer.click/flutter/oncredit) |
 |------------------------------------------------------------------------------------------|
 | _Mantenha <kbd>Ctrl</kbd> pressionado ao clicar no link._                                |
 
