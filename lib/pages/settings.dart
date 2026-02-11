@@ -400,7 +400,7 @@ O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM GARANTIA DE QUALQUER
   }
 
   Future<void> _openSupport() async {
-    final uri = Uri.parse('https://lufer.click/contato');
+    final uri = Uri.parse('https://github.com/Luferat/oncredit/issues');
     await launchUrl(uri);
   }
 

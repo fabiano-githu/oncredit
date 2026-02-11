@@ -93460,7 +93460,7 @@ return A.J($async$z7,r)},
 z8(){var s=0,r=A.K(t.H)
 var $async$z8=A.L(function(a,b){if(a===1)return A.H(b,r)
 for(;;)switch(s){case 0:s=2
-return A.E(A.JD(A.ey("https://lufer.click/contato",0,null),B.kY),$async$z8)
+return A.E(A.JD(A.ey("https://github.com/Luferat/oncredit/issues",0,null),B.kY),$async$z8)
 case 2:return A.I(null,r)}})
 return A.J($async$z8,r)},
 qy(){var s=0,r=A.K(t.H),q,p=this,o
