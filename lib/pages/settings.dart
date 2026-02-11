@@ -42,7 +42,10 @@ class _SettingsPageState extends State<SettingsPage> {
       context: context,
       barrierDismissible: false,
       builder: (_) => AlertDialog(
-        title: const Text('⚠ Configurações Críticas'),
+        title: const Text(
+          '⚠ Configurações Críticas',
+          style: TextStyle(color: Colors.red),
+        ),
         content: SingleChildScrollView(
           child: Column(
             children: [
@@ -246,6 +249,15 @@ class _SettingsPageState extends State<SettingsPage> {
 
                 const Divider(height: 1),
 
+                ListTile(
+                  leading: const Icon(Icons.handyman),
+                  title: const Text('Suporte técnico'),
+                  trailing: const Icon(Icons.open_in_new),
+                  onTap: _openSupport,
+                ),
+
+                const Divider(height: 1),
+
                 AboutListTile(
                   icon: const Icon(Icons.info),
                   applicationName: 'ONCredit',
@@ -384,6 +396,11 @@ O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM GARANTIA DE QUALQUER
 
   Future<void> _openRepository() async {
     final uri = Uri.parse('https://github.com/Luferat/oncredit');
+    await launchUrl(uri);
+  }
+
+  Future<void> _openSupport() async {
+    final uri = Uri.parse('https://lufer.click/contato');
     await launchUrl(uri);
   }
 
