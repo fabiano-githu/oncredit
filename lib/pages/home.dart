@@ -5,7 +5,6 @@ import '../templates/appbar.dart';
 import '../config/app_config.dart';
 import '../tools/formatters.dart';
 import '../services/finance_service.dart';
-import '../pages/settings.dart';
 
 
 class HomePage extends StatefulWidget {
